@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
     res.status(200).send("<h1>Welcome to the Admin Panel</h1>");
 });
 
-app.use('/digitalBook', booksDigitalRoute);
+app.use('/digitalbook', booksDigitalRoute);
 
 // Connect to MongoDB
 mongoose.connect(mongoDBURL, {
