@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(cors({
     origin: function (origin, callback) {
-        const allowedOrigins = ['http://localhost:5173', 'https://bookstorebackend-digital.vercel.app/digitalbook'];
+        const allowedOrigins = ['http://localhost:5173', 'https://bookstorebackend-digital.vercel.app'];
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
